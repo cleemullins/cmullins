@@ -27,14 +27,20 @@ Integration with ABS. The deployment of samples to ABS Blobs is done by hand. Ad
 
 ## DotNet Process Improvements
 1. Cleanup the CI/CD build pipelines.
-2. The nightly builds should run tests 
+2. The nightly builds should run tests
 3. Get external PRs building as part of the PR builds. 
 4. Enable + Publish Coveralls (+badge)
 5. Figure out how to run tests on both Windows and Linux.
+6. Write tests. 
+7. Nightly build should trigger Samples build. 
+
 
 ## JS Process Improvements
 1. Debate moving build from Travis to Azure DevOps.
 2. Figure out how to run tests on both Windows and Linux.
+3. Code Coverage improvements
+4. Setup a real CRON job. 
+5. Enable easy "explicit version" publishing. 
 
 ## Transcript based testing
 1. Plan for testing both C# + JS dialog system using transcript file(s).
