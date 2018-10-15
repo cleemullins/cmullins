@@ -46,10 +46,11 @@ Today the deployment of samples to ABS Blobs is done by hand. Adding this to a n
 
 ## JS Process Improvements
 1. Consider moving from Travis to Azure DevOps.
-2. Figure out how to run tests on both Windows and Linux.
-3. Code Coverage improvements.
-4. Setup a real CRON job. 
-5. Enable easy "explicit version" publishing.
+2. Add CI/CD builds for the 4.0 Branch (and 4.1 shortly). 
+3. Figure out how to run tests on both Windows and Linux.
+4. Code Coverage improvements.
+5. Setup a real CRON job. 
+6. Enable easy "explicit version" publishing.
 
 ## Transcript based testing
 1. Plan for testing both C# + JS dialog system using transcript file(s).
