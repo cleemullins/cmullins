@@ -26,10 +26,10 @@ Improve the VSIX build process
 ### Integration with ABS
 Today the deployment of samples to ABS Blobs is done by hand. Adding this to a nightly build process would provide better everything. How to do this, and how to test? 
 
-### Build against **master** should:
+### Build against botbuiler-samples **master** should:
 1. Build all C# samples against PUBLIC packages. 
 2. Build all Typescript samples against PUBLIC packages. 
-3. Have a build-badge indicating pass/fail. Send email on failure. 
+3. Have a build-badge indicating pass/fail. Send email on failure.
 
 ### Builds against V.Next Branch should:
 1. Use a Package Redirect (NPM + NuGet) to pickup daily packages from MyGet. 
@@ -37,9 +37,9 @@ Today the deployment of samples to ABS Blobs is done by hand. Adding this to a n
 
 ## DotNet Process Improvements
 1. Cleanup the CI/CD build pipelines.
-2. The nightly builds should run tests
-3. Get external PRs building as part of the PR builds. 
-4. Enable + Publish Coveralls (+badge)
+2. Unify the CI/CD build and the nightly build. Package generation / signing / publishing should be contitional, and that condition should be set from a Cron, or via an variable settable at build queue time. 
+3. Get external PRs building as part of the PR builds. Eval impact of secrets on this. 
+4. Validate the Coveralls results. Current results seem questionable. 
 5. Figure out how to run tests on both Windows and Linux.
 6. Write tests. 
 7. Nightly build should trigger Samples build. 
@@ -53,3 +53,9 @@ Today the deployment of samples to ABS Blobs is done by hand. Adding this to a n
 
 ## Transcript based testing
 1. Plan for testing both C# + JS dialog system using transcript file(s).
+
+## Recognizers-Text 
+1. Add CI/CD build for Recognizers-Text in C#
+2. Add CI/CD build for Recognizers-Test in JS
+3. Add CI/CD build for Recognizers-Test in Java
+4. Build + Sign + Publish (to Daily Feed) the relevant packages (NPM / Nuget / Maven).
