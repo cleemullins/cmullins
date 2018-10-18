@@ -57,6 +57,9 @@ Today the deployment of samples to ABS Blobs is done by hand. Adding this to a n
 ## Transcript based testing
 1. Plan for testing both C# + JS dialog system using transcript file(s).
 
+## Tools process improvments
+1. Baseline all tools on the same version number. Right now each tool has a different version. 
+
 ## Recognizers-Text 
 1. Add CI/CD build for Recognizers-Text in C#
 2. Add CI/CD build for Recognizers-Test in JS
