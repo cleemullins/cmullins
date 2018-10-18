@@ -43,6 +43,8 @@ Today the deployment of samples to ABS Blobs is done by hand. Adding this to a n
 5. Figure out how to run tests on both Windows and Linux.
 6. Write tests. 
 7. Nightly build should trigger Samples build. 
+8. Confirm that Symbol Packages are being built and pushed to the Daily Feed. Determine best strategy for publishing these on the NuGet feed. 
+9. We have source level debugging setup via SourceLink. Confirm it works, fix if it doesn't. Should work for daily and offical packages. 
 
 ## JS Process Improvements
 1. Consider moving from Travis to Azure DevOps.
